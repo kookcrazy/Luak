@@ -19,7 +19,7 @@ Lua的自用增强版
     end;
     b = 1;
   };
-  local a = new A;
+  local a = new B;
   a.fa();
   a.fb(1);
   ```

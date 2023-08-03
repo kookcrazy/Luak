@@ -7,10 +7,21 @@ Lua的自用增强版
   ```c
   class A {
     function fa()
+      print("fa " .. a);
+      a = 2;
     end;
+    a = 1;
+  };
+  class B : A {
+    function fb(x)
+      a = a + b + x;
+      print("fb " .. a);
+    end;
+    b = 1;
   };
   local a = new A;
   a.fa();
+  a.fb(1);
   ```
 * 支持switch、continue语法
   ```c

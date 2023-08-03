@@ -33,6 +33,13 @@ Lua的自用增强版
   else
     --todo
   end;
+
+  for i = 1, 10 do
+    if i < 5 then
+      continue;
+    end;
+    print(i);
+  end;
   ```
 * 支持注释语法
   ```c

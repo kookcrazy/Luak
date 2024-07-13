@@ -20,8 +20,8 @@ Lua的自用增强版
     b = 1;
   };
   local a = new B;
-  a.fa();
-  a.fb(1);
+  a:fa();
+  a:fb(1);
   ```
 * 支持switch、continue语法
   ```c
